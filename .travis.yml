@@ -11,7 +11,7 @@ before_install:
     - pip install pytest pytest-cov
     - pip install coveralls
     
-script: python -m pytest -v tests
+script: python -m pytest -v -x --cov=stylecheck
 
 after_success:
     - coveralls
