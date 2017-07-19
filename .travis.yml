@@ -14,9 +14,7 @@ before_install:
 script: python -m pytest -v tests
 
 after_success:
-    - if [[ $ENV == python=3.6* ]]; then
-          coveralls;
-      fi
+    - coveralls
       
 branches:
   only:
