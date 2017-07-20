@@ -1,5 +1,6 @@
+# noinspection PyUnresolvedReferences
 from .context import simple
 
 
 def test_simple_func():
-    assert simple.simple_func(1,3) == 4
+    assert simple.simple_func(1, 3) == 4
